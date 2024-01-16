@@ -291,6 +291,17 @@ let's slide it in from the left
   margin: 5px;
   background-color: #ccc;
 }
+
+#add-recipe-button {
+  background-color: #49656A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition-duration: .3s;
+}
 /* Mobile Query */
 @media (max-width: 767px) {
   .photo {
