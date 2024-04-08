@@ -1,18 +1,20 @@
-/*
-Colors used
-Bodybg - #CABB9D
-hamburgerbg - #49656A
-hamburgertxt- white
-Text - black 
-hr - #49656A
-*/
+
+:root{
+  --bodybg: #CABB9D;
+  --hamburgerbg: #49656A;
+  --hamburgertxt: white;
+  --text: black;
+  --hr: #49656A;
+
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
     font-family: "Lato", sans-serif;
-    background-color: #CABB9D;
+    background-color: var(--bodybg);
   }
 
   #Title {
@@ -20,11 +22,11 @@ body {
   }
 
   a {
-    color: black;
+    color: var(--text);
   }
 
   a :visited {
-    color: black;
+    color: var(--text);
   }
   
   
@@ -131,22 +133,22 @@ body {
   position: relative;
   bottom: 40px;
   justify-content: space-evenly;
-  color: black;
+  color: var(--text);
 }
 
 #recipes a {
   display: flex;
   justify-content: space-evenly;
-  color: black;
+  color: var(--text);
   text-decoration: none;
 }
 
 #recipes a:hover {
-  color: #49656A;
+  color: var(--hamburgerbg);
 }
 
 hr {
-  border: 2px solid #49656A ;
+  border: 2px solid var(--hr); ;
 }
 
 #menuToggle {
@@ -251,7 +253,7 @@ margin: -100px 0 0 -75px;
 padding: 75px;
 padding-top: 125px;
 
-background: #49656A;
+background: var(--hamburgerbg);
 list-style-type: none;
 -webkit-font-smoothing: antialiased;
 /* to stop flickering of text in safari */
