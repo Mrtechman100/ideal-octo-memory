@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cookies</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="modalImages.css"><!--For icons that open recipe-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Syne+Mono&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <main>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="template1.html"><li>Home</li></a>
+                        <a href="mobileCookies.html"><li>Cookies</li></a>
+                        <a href="breads.html"><li>Breads</li></a>
+                        <a href="bardesserts.html"><li>Bar Desserts</li></a>
+                        <a href="randomdesserts.html"><li>Misc. Desserts</li></a>
+                    </ul>
+                </div>
+            </nav>
+            <div id="header">
+                <h1>COOKIES</h1>
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-guts">
+                    <div class="modal-header">
+                        <h2>Chocolate Chip Cookies</h2>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/cookies.jpeg" alt="chocolatechip">
+                        <br>
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>2 1/4 cups of flour</li>
+                            <li>1 tsp baking soda</li>
+                            <li>1 tsp salt</li>
+                            <li>1 cup (2 sticks) butter, softened</li>
+                            <li>3/4 cup granulated sugar</li>
+                            <li>3/4 cup packed brown sugar</li>
+                            <li>1 tps vanilla</li>
+                            <li>2 large eggs</li>
+                            <li>2 cups (12-ounce package) NESTLÉ® TOLL HOUSE® Semi-Sweet Chocolate Morsels</li>
+                        </ul>
+                        <h3>Directions</h3>
+                        <p>Preheat oven to 375°F</p>
+                        <ol>
+                            <li>Combine flour, baking soda and salt in small bowl.</li>
+                            <li>Beat butter, granulated sugar, 
+                                brown sugar and vanilla extract in large mixer bowl until creamy.</li>    
+                            <li>Add eggs, one at a time, beating well after each addition. Gradually beat in flour mixture.
+                                Drop by rounded tablespoon onto ungreased baking sheets.</li>
+                            <li>Bake for 9 to 11 minutes or until golden brown. Cool on baking sheets for 2 minutes</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <button id="open-modal" class="open-modal"><img src="img/cookies.jpeg"></button>
+            <script src="modalScripts.js" defer></script>
+
+        </main>
+    </body>
+</html>
