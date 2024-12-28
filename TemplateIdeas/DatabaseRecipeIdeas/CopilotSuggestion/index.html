@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Recipe Submission</h1>
+    <form id="recipe-form">
+        <label for="title">Recipe Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" name="image" accept="image/*">
+        
+        <label for="ingredients">Ingredients:</label>
+        <textarea id="ingredients" name="ingredients" required></textarea>
+        
+        <label for="instructions">Instructions:</label>
+        <textarea id="instructions" name="instructions" required></textarea>
+        
+        <button type="submit">Submit Recipe</button>
+    </form>
+    
+    <h2>Recipes</h2>
+    <input type="text" id="search-bar" placeholder="Search Recipes">
+    <div id="recipe-cards"></div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

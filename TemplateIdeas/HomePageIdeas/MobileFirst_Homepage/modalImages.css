@@ -50,8 +50,15 @@
     
 }
 
-.modal-header {
+.chocolatechip-modal-header {
     background-image: url(img/cookies.jpeg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+}
+
+.pumpkin-modal-header {
+    background-image: url(img/pumpkincookies.jpeg);
     background-attachment: fixed;
     width: 100%;
     height: 400px;
