@@ -8,22 +8,33 @@
 </head>
 <body>
     <h1>Recipe Submission</h1>
-    <form id="recipe-form">
-        <label for="title">Recipe Title:</label>
-        <input type="text" id="title" name="title" required>
+    <button id="add-recipe-button">Add Recipe</button>
+    <div id="add-recipe" style="display: none;">
+        <form id="recipe-form">
+            <label for="title">Recipe Title:</label>
+            <input type="text" id="title" name="title" required>
 
-        <label for="image">Upload Image:</label>
-        <input type="file" id="image" name="image" accept="image/*">
-        
-        <label for="ingredients">Ingredients:</label>
-        <textarea id="ingredients" name="ingredients" required></textarea>
-        
-        <label for="instructions">Instructions:</label>
-        <textarea id="instructions" name="instructions" required></textarea>
-        
-        <button type="submit">Submit Recipe</button>
-    </form>
-    
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*">
+            
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" required></textarea>
+            
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" name="instructions" required></textarea>
+
+            <label for="tags">Tags:</label>
+            <select id="tags" name="tags">
+                <option value="Cookies">Cookies</option>
+                <option value="Breads">Breads</option>
+                <option value="BarDesserts">Bar Desserts</option>
+                <option value="Others">Other Desserts</option>
+            </select>
+            
+            <button type="submit">Submit Recipe</button>
+        </form>
+    </div>
+
     <h2>Recipes</h2>
     <input type="text" id="search-bar" placeholder="Search Recipes">
     <div id="recipe-cards"></div>

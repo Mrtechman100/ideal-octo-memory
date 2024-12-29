@@ -1,10 +1,19 @@
+:root {
+    --form-bgcolor: #adc178;
+    --body-bgcolor: #f0ead2;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: var(--body-bgcolor);
 }
 
 form {
     margin-bottom: 20px;
+    background-color: var(--form-bgcolor);
+    padding: 20px;
 }
 
 label {
@@ -13,7 +22,7 @@ label {
 }
 
 input, textarea {
-    width: 100%;
+    width: fit-content;
     padding: 8px;
     margin-top: 5px;
 }
@@ -64,6 +73,7 @@ button {
 
 .recipe-card ul li {
     list-style-type: none;
+    padding: 3px;
 }
 
 .recipe-card ol {
@@ -72,12 +82,24 @@ button {
 
 .recipe-card button {
     position: relative;
-    top: 10px;
-    right: 10px;
     background-color: #ff4d4d;
     border: none;
     color: white;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.recipe-card button:hover {
+    background-color: #ff6666;
+}
+
+.recipe-tag {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+    border: 1px solid #d59898;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
 }
