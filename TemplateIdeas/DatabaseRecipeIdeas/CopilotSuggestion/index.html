@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Recipe Submission</h1>
-    <button id="add-recipe-button">Add Recipe</button>
-    <div id="add-recipe" style="display: none;">
+    <h1>Recipes</h1>
+    <input type="text" id="search-bar" placeholder="Search Recipes">
+    <div id="recipe-cards"></div>
+
+    
+    <div id="add-recipe">
         <form id="recipe-form">
+            <h2>Add Recipe</h2>
+
             <label for="title">Recipe Title:</label>
             <input type="text" id="title" name="title" required>
 
@@ -30,14 +35,14 @@
                 <option value="BarDesserts">Bar Desserts</option>
                 <option value="Others">Other Desserts</option>
             </select>
-            
+            <br>
+
             <button type="submit">Submit Recipe</button>
+            <br>
+            <button type="button" id="cancel-button">Cancel</button>
         </form>
     </div>
-
-    <h2>Recipes</h2>
-    <input type="text" id="search-bar" placeholder="Search Recipes">
-    <div id="recipe-cards"></div>
+    <button id="add-recipe-button">Add Recipe</button>
     
     <script src="scripts.js"></script>
 </body>

@@ -8,13 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('search-bar').addEventListener('input', filterRecipes);
     document.getElementById('add-recipe-button').addEventListener('click', function() {
         const addRecipeDiv = document.getElementById('add-recipe');
-        if (addRecipeDiv.style.display === 'none') {
-            addRecipeDiv.style.display = 'block';
-        } else {
-            addRecipeDiv.style.display = 'none';
-        }
+        addRecipeDiv.classList.toggle('show');
     });
 
+    document.getElementById('cancel-button').addEventListener('click', function() {
+        resetForm();
+    });
 
     // Form submission event listener
     document.getElementById('recipe-form').addEventListener('submit', function(event) {
@@ -77,6 +76,11 @@ document.addEventListener('DOMContentLoaded', function() {
         recipeTitle.textContent = title;
         recipeCard.appendChild(recipeTitle);
 
+        const recipeTags = document.createElement('div');
+        recipeTags.classList.add('recipe-tag');
+        recipeTags.innerHTML = `${tag}`;
+        recipeCard.appendChild(recipeTags);
+
         if (image) {
             const recipeImage = document.createElement('img');
             recipeImage.src = image;
@@ -106,11 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         recipeInstructions.appendChild(instructionsList);
         recipeCard.appendChild(recipeInstructions);
-
-        const recipeTags = document.createElement('div');
-        recipeTags.classList.add('recipe-tag');
-        recipeTags.innerHTML = `${tag}`;
-        recipeCard.appendChild(recipeTags);
 
         const deleteButton = document.createElement('button');  
         deleteButton.textContent = 'Delete';
@@ -172,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Clears the form and hides it after submission
     function resetForm() {
         document.getElementById('recipe-form').reset();
-        document.getElementById('add-recipe').style.display = 'none';
+        document.getElementById('add-recipe').classList.remove('show');
         editIndex = null;
     }
 
