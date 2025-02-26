@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('ingredients').value = ingredients;
             document.getElementById('instructions').value = instructions;
             document.getElementById('tags').value = tag;
-            document.getElementById('add-recipe').style.display = 'block';
+            document.getElementById('add-recipe').classList.add('show');
             editIndex = allRecipes.indexOf(recipe);
             recipeCard.remove();
             deleteRecipe(recipe);
